@@ -27,7 +27,7 @@ public class ReaderController {
 		List<UserLocation> user=userServiceImpl.getAllUser();;
 		return  new ResponseEntity<List<UserLocation>>(user, HttpStatus.OK);	
 	}
-	
+
 	
 	// Mapping for Nearest User
 	@GetMapping("/get_users/{N}")
